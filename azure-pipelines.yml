@@ -24,11 +24,15 @@ steps:
     brew update
     brew install pypy
     pypy -m ensurepip
+    pypy -m pip install pytest
     brew install yajl
     brew install pkg-config
+    ln -s /usr/local/Cellar/pypy3 /usr/local/Cellar/pypy
   displayName: 'Install dependencies'
 
 - script: |
     ls -lah
     pypy setup.py build
+    pypy setup.py install
+    pypy -m pytest
   displayName: 'pytest'
