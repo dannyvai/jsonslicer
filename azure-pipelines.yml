@@ -26,7 +26,9 @@ steps:
     pypy -m pip install pytest
     brew install yajl
     brew install pkg-config
-    find /usr/local/Cellar/pypy/7.1.0/libexec/include
+    grep PyUnicode_As /usr/local/Cellar/pypy/7.1.0/libexec/include/*
+
+
   displayName: 'Install dependencies'
 
 - script: |
