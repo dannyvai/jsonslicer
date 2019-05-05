@@ -25,6 +25,7 @@ steps:
     brew install pypy
     pypy -m ensurepip
     brew install yajl
+    brew install pkg-config
   displayName: 'Install dependencies'
 
 - script: |
