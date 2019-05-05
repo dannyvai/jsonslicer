@@ -26,8 +26,7 @@ steps:
     pypy -m pip install pytest
     brew install yajl
     brew install pkg-config
-    ln -s /usr/local/Cellar/pypy3 /usr/local/Cellar/pypy
-    ls -lah /usr/local/Cellar/
+    find /usr/local/Cellar/pypy/7.1.0/libexec/include
   displayName: 'Install dependencies'
 
 - script: |
