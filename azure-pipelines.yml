@@ -29,6 +29,7 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    python setup.py bdist_wheel
+    ls -lah
+    pypy setup.py bdist_wheel
     ls ./dist
   displayName: 'pytest'
