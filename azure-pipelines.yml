@@ -30,6 +30,5 @@ steps:
 
 - script: |
     ls -lah
-    pypy setup.py bdist_wheel
-    ls ./dist
+    pypy setup.py build
   displayName: 'pytest'
